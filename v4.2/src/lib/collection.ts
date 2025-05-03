@@ -4,8 +4,8 @@ export const types = [
   'original',
   'orchestraarr',
   'windbandarr',
-  'chamberarr',
   'pianoarr',
+  'otherarr',
   'accomp',
   'pianocover',
   'remix',
@@ -18,11 +18,17 @@ export const types = [
 
 
 export const works = [
+  { type: 'original', name: '宇宙小郵差 Cosmos Postdog', youtube: 'https://youtu.be/watch?v=Mfd0kHJDgqk' },
+  { type: 'original', name: 'Twin Sparks BGM (for IFMC Winter 2024)', youtube: 'https://youtu.be/watch?v=hKstTqfyWKA' },
+  { type: 'original', name: '致 惑莉 for Holly', youtube: 'https://youtu.be/watch?v=pCqz7FsERvw'},
+  { type: 'original', name: '大地傳說 Tale of the Lands', youtube: 'https://youtu.be/AwDeIB0VQDE' },
+  { type: 'original', name: '戰鼓 War Drums', youtube: 'https://youtu.be/watch?v=dDxrKQow3UY'},
   { type: 'original', name: '拉卡羊與羊毛糰的冒險 Racka and Wool Balls\' Adventure', youtube: 'https://youtu.be/VCFHRzW2kD8' },
   { type: 'original', name: '太陽城 Sun Castle', youtube: 'https://youtu.be/Oi59vL34A0A' },
   { type: 'original', name: '為暮璃送別', youtube: 'https://youtu.be/LKXZ0U865so' },
   { type: 'original', name: '神話 Myth', youtube: 'https://youtu.be/8EyXnvjysZ4' },
   { type: 'original', name: '傳說 Legend', youtube: 'https://youtu.be/TX2VKDkIT_I' },
+  { type: 'original', name: '原韻狂想 Indigenous Fantasia', youtube: 'https://youtu.be/CLNMbCtrCQ4' },
   { type: 'original', name: 'KiaraAlter BGM', youtube: 'https://youtu.be/qFEwRpiRMW4' },
   { type: 'original', name: '遙觀星象 (ゆらり星を眺める) - Stargazers (夏語遙 YAO AI Ver.)', youtube: 'https://youtu.be/2HxwV5iEhSk' },
   { type: 'original', name: '遙觀星象 (ゆらり星を眺める) - Stargazers', youtube: 'https://youtu.be/NQdxwDt-TZ0' },
@@ -51,8 +57,7 @@ export const works = [
   { type: 'windbandarr', name: 'Baba Yetu (Civilization 4 Theme) - Christopher Tin', musescore: 'https://musescore.com/user/290451/scores/5542450' },
   { type: 'windbandarr', name: 'Rainbow\'s End - Edmund Fu', youtube: 'https://youtu.be/BFE7rPaWRi0', musescore: 'https://musescore.com/user/290451/scores/9145797' },
 
-  { type: 'chamberarr', name: '紅蓮華 (鬼滅之刃 OP) - 草野華余子/LiSA (打擊八重奏)', musescore: 'https://musescore.com/user/290451/scores/6376177' },
-
+  { type: 'pianoarr', name: 'BunnyGirl - AKASAKI', musescore: 'https://musescore.com/user/290451/scores/23706259' },
   { type: 'pianoarr', name: 'KINGWORLD - sasakure.UK / 白上フブキ', youtube: 'https://youtu.be/D0az5_0lpFc', musescore: 'https://musescore.com/user/290451/scores/16191199' },
   { type: 'pianoarr', name: 'mumei - TKN / Nanashi Mumei', youtube: 'https://youtu.be/eCkMQraVsUA', musescore: 'https://musescore.com/user/290451/scores/15568954' },
   { type: 'pianoarr', name: 'Altale - 削除 (Piano Duet)', youtube: 'https://youtu.be/dvs0XYU9osU', musescore: 'https://musescore.com/user/290451/scores/5151406' },
@@ -65,6 +70,9 @@ export const works = [
   { type: 'pianoarr', name: 'Used to be (Cytus II ED) - KIVΛ', youtube: 'https://youtu.be/4JlexwB50bw', musescore: 'https://musescore.com/user/290451/scores/5605839' },
   { type: 'pianoarr', name: 'Sincerely (Violet Evergarden OP) - TRUE', youtube: 'https://youtu.be/LxQgcLUjSf4', musescore: 'https://musescore.com/user/290451/scores/5656574' },
   { type: 'pianoarr', name: '紅蓮華 (鬼滅之刃 OP) - 草野華余子/LiSA', musescore: 'https://musescore.com/user/290451/scores/6088143' },
+
+  { type: 'otherarr', name: '桜色の夢 (Deemo 1.0 ED) - 馬場克樹 / 黃裕翔 / 土岐千尋 (for SATB Choir)', musescore: 'https://musescore.com/user/290451/scores/6376177' },
+  { type: 'otherarr', name: '紅蓮華 (鬼滅之刃 OP) - 草野華余子/LiSA (打擊八重奏)', musescore: 'hhttps://musescore.com/user/290451/scores/17328034' },
 
   { type: 'accomp', name: '心做し (kokoronashi) - papiyon (蝶々P) (Piano & Strings Accompaniment)', youtube: 'https://youtu.be/oq0SiF6CWWE', musescore: 'https://musescore.com/user/290451/scores/9580435' },
 
