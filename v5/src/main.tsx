@@ -6,7 +6,8 @@ import App from './App.tsx'
 
 import '@mantine/core/styles.css'
 import '@mantine/dates/styles.css'
-import './assets/styles/main.sass'
+import '@/assets/styles/main.sass'
+import '@/i18n'
 
 const theme = createTheme({
   colors: {
