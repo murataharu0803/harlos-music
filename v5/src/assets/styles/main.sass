@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500..600&display=swap')
+
+@font-face
+  font-family: "Title"
+  src: url("src/assets/fonts/bodoni.ttf") format("truetype")
+  font-weight: 500
+  unicode-range: U+00-02AF
+
+@font-face
+  font-family: "Title TC"
+  src: url("src/assets/fonts/noto_serif-semi_bold.ttf") format("truetype")
+  unicode-range: U+02B0-FFFF
+
+@font-face
+  font-family: "Context"
+  src: url("src/assets/fonts/bely.otf") format("opentype")
+  font-weight: 500
+  unicode-range: U+00-02AF
+
+@font-face
+  font-family: "Context TC"
+  src: url("src/assets/fonts/noto_serif-medium.ttf") format("truetype")
+  unicode-range: U+02B0-FFFF
+
+*
+  // user-select: none
+  // user-drag: none
+  // -webkit-user-drag: none
+  // -webkit-touch-callout: none
+  // -webkit-tap-highlight-color: transparent
+
+h1, h2, h3, h4, h5, h6, .title
+  font-family: 'Title', 'Title TC', serif!important
+  font-weight: 600
+  color: #4b3f26
+
+span, p, a, li, button, input, textarea, label, pre, code
+  font-family: 'Context', 'Context TC', serif!important
+  font-weight: 500
+  color: #4b3f26
+
+pre, code
+  overflow-x: auto
+  white-space: pre-wrap
+
+video
+  display: block
+  max-height: 100%
+  max-width: 100%
