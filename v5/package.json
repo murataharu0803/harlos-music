@@ -17,6 +17,7 @@
     "@mantine/core": "^8.3.2",
     "@mantine/dates": "^8.3.2",
     "@mantine/hooks": "^8.3.2",
+    "@modyfi/vite-plugin-yaml": "^1.1.1",
     "@tabler/icons-react": "^3.35.0",
     "axios": "^1.12.2",
     "i18next": "^25.5.2",

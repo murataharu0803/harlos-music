@@ -5,6 +5,7 @@
     "jsx": "react-jsx",
     "types": [
       "@types/react",
+      "@modyfi/vite-plugin-yaml/modules",
     ],
     "composite": true,
     "baseUrl": ".",

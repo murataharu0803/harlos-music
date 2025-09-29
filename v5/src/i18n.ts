@@ -1,12 +1,7 @@
 import i18n from 'i18next'
 import detector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
-import YAML from 'yaml'
-
-
-const file = await(await fetch('src/assets/i18n.yaml')).text()
-const resources = YAML.parse(file)
-console.log('i18n resources:', resources)
+import resources from 'src/assets/i18n.yaml'
 
 i18n
   .use(detector)

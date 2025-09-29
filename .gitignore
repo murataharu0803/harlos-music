@@ -102,4 +102,5 @@ sw.*
 .cache
 dist
 
+build
 .vite

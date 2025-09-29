@@ -6,6 +6,7 @@ import App from './App.tsx'
 
 import '@mantine/core/styles.css'
 import '@mantine/dates/styles.css'
+import '@/assets/fonts/fonts.sass'
 import '@/assets/styles/main.sass'
 import '@/i18n'
 
