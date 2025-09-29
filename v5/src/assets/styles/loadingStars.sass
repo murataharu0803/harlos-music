@@ -1,0 +1,56 @@
+@keyframes bg-move
+  from
+    background-position: 0 0
+  to
+    background-position: 100% -100%
+
+.loading
+  background-image: url('/src/assets/images/tile.png')
+  background-repeat: repeat
+  background-size: 20%
+  animation: bg-move 20s linear infinite
+
+@keyframes rotate-smooth
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(90deg)
+
+.star1
+  animation: rotate-smooth 1s linear infinite
+
+@keyframes rotate-mechanic
+  from
+    transform: rotate(0deg)
+  50%
+    transform: rotate(-90deg)
+  to
+    transform: rotate(-90deg)
+
+.star2
+  animation: rotate-mechanic 1s cubic-bezier(1, -1, 1, 2) infinite
+
+  
+@keyframes rotate-135
+  from
+    transform: rotate(0deg)
+  25%
+    transform: rotate(135deg)
+  50%
+    transform: rotate(135deg)
+  75%
+    transform: rotate(270deg)
+  to
+    transform: rotate(270deg)
+
+.star3
+  animation: rotate-135 1s ease-out infinite
+
+@keyframes rotate-smooth-reverse
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(-90deg)
+
+.star4
+  animation: rotate-smooth-reverse 0.3s linear infinite

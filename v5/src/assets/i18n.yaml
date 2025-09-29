@@ -1,0 +1,99 @@
+en:
+  translation:
+    harlos_music: Harlos Music
+    about: About
+    portfolio: Portfolio
+    commission: Commissions
+    soundtrack: Soundtrack
+    film: Film
+    epic: Epic
+    orchestral: Orchestral
+    piano: Piano
+    pop: Pop
+    about_desc: |-
+      Enter an adventurous world, behold the scenery
+      Immerse in flowing ambience, feel the emotional tides
+      Bringing you resonance in visuals, stories, and moods
+    loadMore: Load More
+    discussion: Discuss details and pricing
+    deposit: Confirm details and pay deposit
+    draft: Review draft and request revisions
+    complete: Pay balance and receive final work
+    after: Additional needs
+    discussionDesc: |-
+      Preferably via Discord / Twitter,
+      please provide relevant info (usage, style, length, budget, deadline, etc.),
+      I will reply whether I can take the job and provide a quote.
+    depositDesc: |-
+      I will send the discussion results, production time, and quote via email.
+      After you pay the deposit, please reply to confirm, and I will start production.
+      The deposit is half of the total commission amount, or 1000 if the total is less than 1000.
+      Once the deposit is paid, if you change your mind and cancel the commission,
+      the deposit will not be refunded.
+      You can choose to pay via bank transfer (Taiwan),
+      Paypal (overseas, may need to cover fees depending on situation), or HiveBee.
+    draftDesc: |-
+      When the piece is near completion, I will send the file for review.
+      You have two opportunities for revisions, which may delay the completion time.
+      If you are still not satisfied, the deposit will not be refunded.
+    completeDesc: |-
+      When nearing completion, you will need to pay the balance,
+      and I will deliver the work via email or cloud drive after completion.
+      Please be sure to reply to confirm receipt of the file.
+      If the file is too large, it will be sent via cloud drive.
+      Once confirmed received, you cannot request it again, so please keep it safe.
+    afterDesc: |-
+      If you have additional needs afterwards
+      (e.g., non-commercial commission needing commercial use),
+      you can purchase a license for an additional fee.
+    footerText: |-
+      This website is built with TypeScript, React, Mantine UI, and Vite.
+      Music made by Harlos Music.
+      Copyright © 2016 - 2025 Harlos Music. All rights reserved.
+
+zh-TW:
+  translation:
+    harlos_music: 哈洛斯音樂
+    about: 關於
+    portfolio: 作品
+    commission: 委託
+    soundtrack: 原聲帶
+    film: 電影
+    epic: 史詩
+    orchestral: 管弦
+    piano: 鋼琴
+    pop: 流行
+    about_desc: |-
+      進入冒險的世界　欣賞眼前的美景
+      沉溺氛圍的流動　感受情緒的起伏
+      為你帶來畫面　故事　心境的共鳴
+    loadMore: 顯示更多
+    discussion: 討論委託內容與報價
+    deposit: 內容確認與訂金支付
+    draft: 草稿試聽與修改
+    complete: 支付尾款並交付作品
+    after: 其他需求 
+    discussionDesc: |-
+      盡量以 Discord / Twitter 為主，
+      並告知委託相關資訊 (用途、風格、長度、預算、期限等)，
+      我方會回覆是否接案與報價。
+    depositDesc: |-
+      我方將討論結果、製作時間與報價以 Email 寄出，
+      在您支付訂金後請回信確認，我方即開始製作。
+      訂金為總委託金額之一半，若未滿 1000 則以 1000 計。
+      一旦繳付訂金後，若又反悔取消委託，將不返還訂金。
+      您可選擇以轉帳 (台灣)、Paypal (海外，視情況需補手續費) 或是 HiveBee 付款。
+    draftDesc: |-
+      樂曲接近完成時，將寄送檔案供試聽。
+      有兩次修改機會，可能會延後完稿時間。
+      若仍不滿意，訂金不會退還。
+    completeDesc: |-
+      接近完成時，會需要您支付尾款，我方即可在完成後以 Email 或雲端硬碟交件。
+      請務必回信表示已收到檔案。若檔案過大會以雲端硬碟傳送，
+      確認收到後不得再次索取，請妥善保存。
+    afterDesc: |-
+      若事後有額外用途的需求 (例如：非商業委託需做商業使用)，可以加價購買授權。
+    footerText: |-
+      本網站由 TypeScript、React、Mantine UI、Vite 製作
+      音樂由 Harlos Music 創作
+      版權所有 © 2016 - 2025 Harlos Music，保留一切權利

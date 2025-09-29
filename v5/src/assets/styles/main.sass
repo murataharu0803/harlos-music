@@ -1,0 +1,41 @@
+html
+  scroll-behavior: smooth
+
+*
+  user-select: none
+  user-drag: none
+  -webkit-user-drag: none
+  -webkit-touch-callout: none
+  -webkit-tap-highlight-color: transparent
+
+h1, h2, h3, h4, h5, h6, .title
+  font-family: 'Title', 'Title TC', serif!important
+  font-weight: 600
+  color: #4b3f26
+
+span, p, a, li, button, input, textarea, label, pre, code
+  font-family: 'Context', 'Context TC', serif!important
+  font-weight: 500
+  color: #4b3f26
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+    color: #af8d53
+
+pre, code
+  overflow-x: auto
+  white-space: pre-wrap
+
+video
+  display: block
+  max-height: 100%
+  max-width: 100%
+
+.icon-hover
+  cursor: pointer
+  margin-right: 8px
+  transition: color 250ms
+  &:hover
+    color: #af8d53

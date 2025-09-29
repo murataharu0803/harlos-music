@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "outDir": "./docs",
+    "sourceMap": true,
+    "allowJs": true,
+    "plugins": [],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": false,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "lib": [
+      "DOM",
+      "DOM.AsyncIterable",
+      "ESNext",
+      "ESNext.AsyncIterable"
+    ],
+    "target": "ESNEXT",
+    "useDefineForClassFields": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+    "noUncheckedSideEffectImports": true,
+    "emitDecoratorMetadata": true
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
