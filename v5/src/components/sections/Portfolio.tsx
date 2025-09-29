@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import useData, { PortfolioWork, Sheet } from '@/hooks/useData'
 
 import Work from '@/components/Work'
+import Divider from '@/components/Divider'
 
 const defaultWorks: PortfolioWork[] = [
   { type: 'original', name: 'Origin of the Winds 風の起源', display: true,
@@ -53,7 +54,8 @@ const Portfolio: React.FC = () => {
 
   return <Box bg="accent">
     <Container id="portfolio" py="10vw" px="xl">
-      <Title order={2} c="white" ta="center" mb="6vw">{t('portfolio')}</Title>
+      <Title order={2} c="white" ta="center">{t('portfolio')}</Title>
+      <Divider />
       {isDefault ?
         section(defaultWorks) :
         workTypes.map(type => section(

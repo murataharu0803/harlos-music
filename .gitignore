@@ -101,3 +101,5 @@ sw.*
 .nitro
 .cache
 dist
+
+.vite

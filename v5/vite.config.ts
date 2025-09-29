@@ -9,6 +9,12 @@ export default defineConfig({
     tsconfigPaths(),
   ],
   build: {
-    outDir: './docs',
+    outDir: '../build',
+    emptyOutDir: true,
   },
+  esbuild: {
+    supported: {
+      'top-level-await': true
+    },
+  }
 })

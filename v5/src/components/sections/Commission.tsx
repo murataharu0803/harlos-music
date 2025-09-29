@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import React, { useState } from 'react'
 
 import IconSvg from '@/assets/images/icon.svg'
+import { DividerAccent } from '@/components/Divider'
 
 const steps = [
   'discussion',
@@ -18,7 +19,8 @@ const Commission: React.FC = () => {
 
   return <Box>
     <Container id="commission" maw="640px" py="10vw" px="xl">
-      <Title order={2} ta="center" mb="6vw">{t('commission')}</Title>
+      <Title order={2} ta="center">{t('commission')}</Title>
+      <DividerAccent />
       <Stepper
         active={active}
         onStepClick={setActive}

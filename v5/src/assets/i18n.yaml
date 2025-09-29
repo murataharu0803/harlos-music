@@ -20,11 +20,11 @@ en:
     draft: Review draft and request revisions
     complete: Pay balance and receive final work
     after: Additional needs
-    commission.discussionDesc: |-
+    discussionDesc: |-
       Preferably via Discord / Twitter,
       please provide relevant info (usage, style, length, budget, deadline, etc.),
       I will reply whether I can take the job and provide a quote.
-    commission.depositDesc: |-
+    depositDesc: |-
       I will send the discussion results, production time, and quote via email.
       After you pay the deposit, please reply to confirm, and I will start production.
       The deposit is half of the total commission amount, or 1000 if the total is less than 1000.
@@ -32,17 +32,17 @@ en:
       the deposit will not be refunded.
       You can choose to pay via bank transfer (Taiwan),
       Paypal (overseas, may need to cover fees depending on situation), or HiveBee.
-    commission.draftDesc: |-
+    draftDesc: |-
       When the piece is near completion, I will send the file for review.
       You have two opportunities for revisions, which may delay the completion time.
       If you are still not satisfied, the deposit will not be refunded.
-    commission.completeDesc: |-
+    completeDesc: |-
       When nearing completion, you will need to pay the balance,
       and I will deliver the work via email or cloud drive after completion.
       Please be sure to reply to confirm receipt of the file.
       If the file is too large, it will be sent via cloud drive.
       Once confirmed received, you cannot request it again, so please keep it safe.
-    commission.afterDesc: |-
+    afterDesc: |-
       If you have additional needs afterwards
       (e.g., non-commercial commission needing commercial use),
       you can purchase a license for an additional fee.
