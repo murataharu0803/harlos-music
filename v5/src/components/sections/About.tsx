@@ -4,7 +4,7 @@ import React, { Fragment } from 'react'
 
 import star from '@/assets/images/star.svg'
 
-const Layout: React.FC = () => {
+const About: React.FC = () => {
   const { t } = useTranslation()
 
   const abouts = [
@@ -28,7 +28,7 @@ const Layout: React.FC = () => {
     </Fragment>)}
   </Group>
 
-  return <Center id="home" mih="20vw" py="10vw"
+  return <Center id="about" mih="20vw" py="10vw"
     style={{ flexDirection: 'column', gap: '2vw' }}
   >
     <AboutTitles />
@@ -36,4 +36,4 @@ const Layout: React.FC = () => {
   </Center>
 }
 
-export default Layout
+export default About

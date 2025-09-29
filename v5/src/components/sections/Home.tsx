@@ -4,7 +4,7 @@ import React from 'react'
 
 import logoFull from '@/assets/images/logo-full.svg'
 
-const Layout: React.FC = () => {
+const Home: React.FC = () => {
 
   const { t } = useTranslation()
 
@@ -16,4 +16,4 @@ const Layout: React.FC = () => {
   </Center>
 }
 
-export default Layout
+export default Home

@@ -6,10 +6,12 @@ import { useEffect, useState } from 'react'
 export interface PortfolioWork {
   type: string
   name: string
+  artist?: string
   display: boolean
-  youtube: string
-  musescore: string
-  soundcloud: string
+  youtube?: string
+  musescore?: string
+  soundcloud?: string
+  tags?: string[]
 }
 
 export interface WorkType {
