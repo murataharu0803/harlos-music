@@ -11,18 +11,21 @@ html
 h1, h2, h3, h4, h5, h6, .title
   font-family: 'Title', 'Title TC', serif!important
   font-weight: 600
-  color: #4b3f26
+  color: var(--mantine-color-dark-0)
 
 span, p, a, li, button, input, textarea, label, pre, code
   font-family: 'Context', 'Context TC', serif!important
   font-weight: 500
-  color: #4b3f26
+  color: var(--mantine-color-dark-0)
 
 a
   text-decoration: none
   &:hover
     text-decoration: none
-    color: #af8d53
+    color: var(--mantine-color-accent-0)
+
+.header a:hover
+  background-color: #cccccc
 
 pre, code
   overflow-x: auto
@@ -34,8 +37,9 @@ video
   max-width: 100%
 
 .icon-hover
+  color: var(--mantine-color-dark-0)
   cursor: pointer
   margin-right: 8px
   transition: color 250ms
   &:hover
-    color: #af8d53
+    color: var(--mantine-color-accent-0)

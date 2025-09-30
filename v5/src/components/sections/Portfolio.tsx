@@ -1,10 +1,52 @@
-import { Box, Button, Container, Grid, Title } from '@mantine/core'
+import { Box, Button, Container, Grid, Title, Text, Collapse } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import React, { useState } from 'react'
-import useData, { PortfolioWork, Sheet } from '@/hooks/useData'
+import useData, { PortfolioWork, Sheet, Tags } from '@/hooks/useData'
 
 import Work from '@/components/Work'
 import Divider from '@/components/Divider'
+import { IconCaretDownFilled } from '@tabler/icons-react'
+
+const Section: React.FC<{
+  works: PortfolioWork[],
+  tags: Tags[],
+  type?: string,
+  lang: string,
+}> = ({ works, tags, type, lang }) => {
+  const [open, setOpen] = useState(!type)
+
+  if (works.length === 0) return null
+
+  return <>
+    {!!type && <Title
+      order={3} c="white" ta="center" mb="md"
+      style={{ cursor: 'pointer' }}
+      onClick={() => setOpen(o => !o)}
+    >
+      {type}
+      <IconCaretDownFilled
+        size={20}
+        style={{
+          verticalAlign: 'middle',
+          marginLeft: '8px',
+          transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
+          transition: 'transform 200ms ease-in-out',
+        }}
+      />
+    </Title>}
+    <Collapse in={open}>
+      <Grid justify="center" mb="64px">
+        {works.map((work, index) =>
+          <Grid.Col span={{ base: 12, xs: 6, sm: 4 }} key={index}>
+            <Work {...work} tagsText={
+              work.tags?.map(tg => tags.find(tag => tag.id === tg)?.[lang] || tg) || []
+            }/>
+          </Grid.Col>,
+        )}
+      </Grid>
+    </Collapse>
+  </>
+}
 
 const defaultWorks: PortfolioWork[] = [
   { type: 'original', name: 'Origin of the Winds 風の起源', display: true,
@@ -36,37 +78,26 @@ const Portfolio: React.FC = () => {
   const tags = useData(Sheet.TAGS)
   const [isDefault, setIsDefault] = useState(true)
 
-  const section = (works: PortfolioWork[], type?: string) => {
-    if (works.length === 0) return null
-    return <>
-      {!!type && <Title order={3} c="white" ta="center" mb="md">{type}</Title>}
-      <Grid justify="center" mb="64px">
-        {works.map((work, index) =>
-          <Grid.Col span={4} key={index}>
-            <Work {...work} tagsText={
-              work.tags?.map(tg => tags.find(tag => tag.id === tg)?.[lang] || tg) || []
-            }/>
-          </Grid.Col>,
-        )}
-      </Grid>
-    </>
-  }
-
-  return <Box bg="accent">
-    <Container id="portfolio" py="10vw" px="xl">
+  return <Box bg="accent" pos="relative">
+    <Box id="portfolio" pos="absolute" top="-80px"/>
+    <Container py="10vw" px="xl">
       <Title order={2} c="white" ta="center">{t('portfolio')}</Title>
       <Divider />
-      {isDefault ?
-        section(defaultWorks) :
-        workTypes.map(type => section(
-          works.filter(w => w.type === type.id && w.display),
-          workTypes.find(wt => type.id === wt.id)?.[lang] || type.id,
-        ))
+      {isDefault ? <>
+        <Button
+          fullWidth variant="light" size="md"
+          onClick={() => setIsDefault(false)}
+        >
+          <Text c="white">{t('showAll')}</Text>
+        </Button>
+        <Section works={defaultWorks} tags={tags} lang={lang}/>
+      </> :
+        workTypes.map(type => {
+          const filteredWorks = works.filter(w => w.type === type.id && w.display)
+          const workType = workTypes.find(wt => type.id === wt.id)?.[lang] || type.id
+          return <Section key={type.id} works={filteredWorks} tags={tags} type={workType} lang={lang}/>
+        })
       }
-      {isDefault && <Button
-        fullWidth variant="light" size="md" mt="4vw" c="white"
-        onClick={() => setIsDefault(false)}
-      >{t('loadMore')}</Button>}
     </Container>
   </Box>
 }
