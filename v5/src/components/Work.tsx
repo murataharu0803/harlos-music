@@ -17,11 +17,11 @@ const Work: React.FC<WorkProps> = work => {
 
   return <Card withBorder padding="sm" radius="md" >
     <Group align="stretch">
-      <Box flex="1 0 0" h="7.5em">
+      <Box flex="1 0 0" h={{ base: 'auto', xs: '7.5rem' }}>
         <Group gap="0" mb={4}>{work.tagsText.map((tag, index) =>
-          <Badge key={index} mr={4} mb={4} variant="outline" size="xs">{tag}</Badge>,
+          <Badge key={index} mr={4} mb={4} variant="outline" size="xs" c="dark">{tag}</Badge>,
         )}</Group>
-        <Stack gap="0">
+        <Stack gap="0" c="dark">
           <Text>{work.name}</Text>
           <Text c="dimmed" fz="sm">{work.artist}</Text>
         </Stack>

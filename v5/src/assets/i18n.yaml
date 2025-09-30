@@ -3,7 +3,7 @@ en:
     harlos_music: Harlos Music
     about: About
     portfolio: Portfolio
-    commission: Commissions
+    commission: Commission
     soundtrack: Soundtrack
     film: Film
     epic: Epic
@@ -14,7 +14,7 @@ en:
       Enter an adventurous world, behold the scenery
       Immerse in flowing ambience, feel the emotional tides
       Bringing you resonance in visuals, stories, and moods
-    loadMore: Load More
+    showAll: show all
     discussion: Discuss details and pricing
     deposit: Confirm details and pay deposit
     draft: Review draft and request revisions
@@ -27,7 +27,7 @@ en:
     depositDesc: |-
       I will send the discussion results, production time, and quote via email.
       After you pay the deposit, please reply to confirm, and I will start production.
-      The deposit is half of the total commission amount, or 1000 if the total is less than 1000.
+      The deposit is half of the total commission amount, or 30 USD if it is less than that.
       Once the deposit is paid, if you change your mind and cancel the commission,
       the deposit will not be refunded.
       You can choose to pay via bank transfer (Taiwan),
@@ -67,7 +67,7 @@ zh-TW:
       進入冒險的世界　欣賞眼前的美景
       沉溺氛圍的流動　感受情緒的起伏
       為你帶來畫面　故事　心境的共鳴
-    loadMore: 顯示更多
+    showAll: 顯示全部
     discussion: 討論委託內容與報價
     deposit: 內容確認與訂金支付
     draft: 草稿試聽與修改
@@ -80,7 +80,7 @@ zh-TW:
     depositDesc: |-
       我方將討論結果、製作時間與報價以 Email 寄出，
       在您支付訂金後請回信確認，我方即開始製作。
-      訂金為總委託金額之一半，若未滿 1000 則以 1000 計。
+      訂金為總委託金額之一半，若未滿新臺幣壹仟圓則以新臺幣壹仟圓計。
       一旦繳付訂金後，若又反悔取消委託，將不返還訂金。
       您可選擇以轉帳 (台灣)、Paypal (海外，視情況需補手續費) 或是 HiveBee 付款。
     draftDesc: |-

@@ -1,8 +1,8 @@
-import { Center, Group, Image, Title, Text } from '@mantine/core'
+import { Center, Group, Image, Title, Text, Box, Stack } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import React, { Fragment } from 'react'
 
-import star from '@/assets/images/star.svg'
+import starSvg from '@/assets/images/star.svg'
 
 const About: React.FC = () => {
   const { t } = useTranslation()
@@ -16,23 +16,44 @@ const About: React.FC = () => {
     'pop',
   ]
 
+  const aboutsMobile = [
+    [ 'soundtrack', 'film' ],
+    [ 'epic', 'orchestral' ],
+    [ 'piano', 'pop' ],
+  ]
+
   const aboutTitles = abouts.map(about => t(about))
 
   const aboutText = t('about_desc').split('\n').map((line, i) =>
     <Fragment key={i}>{line}<br /></Fragment>)
 
-  const AboutTitles = () => <Group>
-    {aboutTitles.map((title, i) => <Fragment key={title}>
-      {!!i && <Image src={star} alt="*" w={16} h={16} /> }
-      <Title  order={3} lh={2}>{t(title)}</Title>
-    </Fragment>)}
+  const star = <Image src={starSvg} alt="*" w={16} h={16} />
+
+  const AboutTitles = () => <Group visibleFrom='sm'>
+    {aboutTitles.map(title => <Fragment key={title}>
+      {star}
+      <Title order={3}>{t(title)}</Title>
+    </Fragment>)}{star}
   </Group>
 
-  return <Center id="about" mih="20vw" py="10vw"
+  const AboutTitlesMobile = () => <Stack gap="sm" align="center">{
+    aboutsMobile.map((row, i) =>
+      <Group key={i} hiddenFrom='sm' gap="sm">
+        {row.map(title => <Fragment key={title}>
+          {star}
+          <Title order={3} lh={1.25}>{t(title)}</Title>
+        </Fragment>)}{star}
+      </Group>,
+    )
+  }</Stack>
+
+  return <Center pos="relative" mih="20vw" py="10vw"
     style={{ flexDirection: 'column', gap: '2vw' }}
   >
+    <Box id="about" pos="absolute" top="-80px"/>
     <AboutTitles />
-    <Text c="dimmed" ta="center" lh={2}>{aboutText}</Text>
+    <AboutTitlesMobile />
+    <Text c="dimmed" ta="center" mt="md" lh={2}>{aboutText}</Text>
   </Center>
 }
 

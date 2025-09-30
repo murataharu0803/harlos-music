@@ -6,8 +6,8 @@ import starWhite from '@/assets/images/star-white.svg'
 import star from '@/assets/images/star.svg'
 
 const Divider: React.FC = () => {
-  return <Center><Box pos="relative" mt="16px" mb="48px"
-    h="4px" w="480px" maw="100%" bg="white">
+  return <Center><Box pos="relative" mt="16px" mb={{ base: '36px', sm: '48px' }}
+    h="4px" w={{ base: '75vw', xs: 480 }} maw="100%" bg="white">
     <Image src={starWhite} alt="*" w={24} h={24}
       pos="absolute" top={-10} left={-10}
     />
@@ -18,8 +18,8 @@ const Divider: React.FC = () => {
 }
 
 const Accent: React.FC = () => {
-  return <Center><Box pos="relative" mt="16px" mb="48px"
-    h="4px" w="480px" maw="100%" bg="accent">
+  return <Center><Box pos="relative" mt="16px" mb={{ base: '36px', sm: '48px' }}
+    h="4px" w={{ base: '75vw', xs: 480 }} maw="100%" bg="accent">
     <Image src={star} alt="*" w={24} h={24}
       pos="absolute" top={-10} left={-10}
     />
